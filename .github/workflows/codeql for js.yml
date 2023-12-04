@@ -58,7 +58,10 @@ jobs:
         # queries: security-extended,security-and-quality
     - name: Autobuild
       uses: github/codeql-action/autobuild@v2
-
+    - name: Create .env file
+      run: |
+        echo "${{ secrets.ENV_FILE }}" > .env
+      working-directory: ${{ github.workspace }}
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
