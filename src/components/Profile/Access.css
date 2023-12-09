@@ -1,0 +1,81 @@
+.back {
+    height: 100%;
+}
+
+.form_access {
+    display: flex;
+    width: 90%;
+    gap: 3rem;
+    height: 60%;
+    align-items: flex-end;
+}
+
+.container_form1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    align-items: center;
+}
+
+.container_form2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    align-items: center;
+}
+
+.container_form3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    align-items: center;
+}
+
+/* Media query para pantallas de 425px o menos */
+@media (max-width: 425px) {
+    .form_access {
+        /* Estilos específicos para pantallas de 425px o menos */
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 2rem;
+        /* Ajusta el espaciado entre elementos */
+        height: auto;
+        /* Ajusta la altura automáticamente */
+        align-items: center;
+    }
+
+    .container_form1,
+    .container_form2,
+    .container_form3 {
+        /* Estilos específicos para pantallas de 425px o menos */
+        width: 100%;
+        /* Llena el ancho disponible */
+    }
+}
+
+/* Media query para pantallas de 768px o menos */
+@media (max-width: 768px) {
+    .form_access {
+        background-color: white;
+        /* Estilos específicos para pantallas de 768px o menos */
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        /* Ajusta el espaciado entre elementos */
+        /* Ajusta la altura automáticamente */
+        align-items: center;
+    }
+
+    .container_form1,
+    .container_form2,
+    .container_form3 {
+        height: 80px;
+        /* Estilos específicos para pantallas de 768px o menos */
+        width: 100%;
+        /* Llena el ancho disponible */
+    }
+}

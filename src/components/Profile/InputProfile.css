@@ -1,0 +1,20 @@
+.box_input2 {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	margin: 0.4rem 0;   
+}
+
+.box_input2 input {
+	height: 2rem;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 12px;
+	padding: 0.5rem;
+	font-size: 1rem;
+}
+.box_input2 label {
+	font-size: 1rem;
+	padding: 0.2rem 0.2rem;
+	font-weight: bolder;
+}

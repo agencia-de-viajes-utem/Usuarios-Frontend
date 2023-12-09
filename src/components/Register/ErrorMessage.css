@@ -1,0 +1,16 @@
+.error-message {
+    background-color: #ff6b6b; /* Color de fondo*/
+    color: white; /* Color de texto*/
+    padding: 5px; /* Espaciado interno */
+    border: 1px solid #ff0000; 
+    border-radius: 4px; /* Bordes redondeados */
+    text-align: center; /* Texto centrado */
+    max-width: 350px; /* Ancho máximo del cartel */
+    margin: 0 auto; 
+    margin-top: 5px; /* Espaciado superior */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .error-message p {
+    margin: 0;
+  }

@@ -1,0 +1,65 @@
+/* UserMenu.css */
+
+.user-menu {
+    background-color: #219ebc;
+    /* Fondo oscuro */
+    color: white;
+    /* Texto blanco */
+    padding: 10px;
+    width: 100%;
+}
+
+.horizontal-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* Muestra las opciones en una fila horizontal */
+    justify-content: center;
+}
+
+.horizontal-menu li {
+    margin-right: 30px;
+    /* Espaciado entre las opciones */
+    cursor: pointer;
+}
+
+.horizontal-menu li:last-child {
+    margin-right: 0;
+    /* Elimina el margen derecho de la última opción */
+}
+
+.horizontal-menu li:hover {
+    text-decoration: underline;
+}
+
+/* Media query para pantallas menores a 465px */
+@media screen and (max-width: 464px) {
+    .horizontal-menu li {
+        margin-bottom: 10px;
+
+        /* Reducir el espaciado entre opciones */
+        font-size: 0.9em;
+        /* Reducir el tamaño del texto si es necesario */
+    }
+}
+
+/* Media query para pantallas menores a 768px */
+@media screen and (max-width: 767px) {
+    .horizontal-menu {
+        flex-direction: column;
+        /* Mostrar las opciones en una columna */
+        align-items: center;
+        /* Centrar las opciones verticalmente */
+    }
+
+    .user-menu {
+        padding: 0;
+    }
+
+    .horizontal-menu li {
+        margin-right: 0;
+        /* Eliminar el margen entre opciones */
+        margin-bottom: 15px;
+        /* Agregar espaciado entre opciones */
+    }
+}

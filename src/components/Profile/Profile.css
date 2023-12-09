@@ -1,0 +1,164 @@
+.main_container {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.sub-container {
+    display: flex;
+    box-sizing: content-box;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 2rem;
+}
+
+.information {
+    display: flex;
+    box-sizing: content-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    height: 55%;
+    background-color: white;
+}
+
+.height {
+    height: 65%;
+}
+
+.button_basic_data {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    height: 2.8rem;
+    width: 40%;
+    margin: 0.5rem 0;
+    background-color: #fb8500;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 5px 6px -1px rgba(0, 0, 0, 0.36);
+    color: #fff;
+    cursor: pointer;
+}
+
+.button_basic_data:hover {
+    background-color: #f77f00;
+}
+
+.title_data {
+    background-color: #023047;
+    padding: 0 1rem;
+    color: white;
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    height: 10px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.information2 {
+    display: flex;
+    box-sizing: content-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    height: 25%;
+
+    background-color: white;
+}
+
+.sub_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 94%;
+}
+
+.height2 {
+    height: 40%;
+}
+
+@media (max-width: 769px) {
+    .main_container {
+        flex-direction: column;
+        justify-content: center;
+        /* Centrar verticalmente el contenido */
+        align-items: center;
+        /* Centrar horizontalmente el contenido */
+        /* Ocupar toda la altura de la pantalla */
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .information {
+        width: 90%;
+        /* Reducir un poco el ancho para dejar espacio en los lados */
+        height: 100%;
+    }
+
+    .button_basic_data {
+        width: 100%;
+    }
+
+    .title_data {
+        width: 100%;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .information2 {
+        width: 90%;
+        height: auto;
+    }
+
+    .sub_container {
+        height: auto;
+    }
+}
+
+@media (max-width: 475px) {
+    .main_container {
+        width: 100%;
+        /* Agregar esto si no se especifica ya */
+    }
+
+    .container {
+        width: 100%;
+        /* Agregar esto si no se especifica ya */
+    }
+
+    .information {
+        width: 100%;
+        /* Agregar esto si no se especifica ya */
+    }
+
+    /* ... Otros elementos */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}

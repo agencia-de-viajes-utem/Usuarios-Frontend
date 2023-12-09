@@ -1,0 +1,148 @@
+/* Order.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    box-sizing: content-box;
+    flex-direction: column;
+    align-items: center;
+}
+.A {
+    color: rgb(97, 204, 97);
+}
+.B {
+    color: #09cbc8;
+}
+.C {
+    color: red;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    background: #f8f8f8;
+}
+
+.content-tittle {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    color: white;
+    background-color: #023047;
+}
+
+.container-article {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 1rem;
+}
+
+.Article-container {
+    display: flex;
+    flex: 50%;
+    padding: 0.6rem;
+    align-items: center;
+    border-radius: 1rem;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+.site,
+.datos,
+.details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.details span {
+    padding-right: 1rem;
+}
+
+.left-section,
+.center-section,
+.right-section {
+    width: 33.33%;
+    /* Distribuir el ancho en 3 partes iguales */
+    text-align: left;
+    /* O el estilo deseado para cada sección */
+}
+
+.left-section {
+    text-align: center;
+}
+
+.center-section {
+    text-align: center;
+}
+
+.right-section {
+    text-align: center;
+}
+
+.buttons {
+    margin-top: center;
+}
+
+/* Media query para pantallas menores a 769px */
+@media screen and (max-width: 768px) {
+    .content {
+        width: 100%;
+        /* Reducir el ancho del contenido */
+        margin: 0 auto;
+        /* Centrar el contenido */
+    }
+
+    .Article-container {
+        flex: 100%;
+        /* Hacer que los artículos ocupen el 100% del ancho */
+        margin: 0.5rem;
+        /* Reducir el margen entre artículos */
+    }
+
+    .site,
+    .datos,
+    .details {
+        width: 100%;
+        /* Hacer que las secciones ocupen todo el ancho */
+        margin-bottom: 1rem;
+        /* Agregar espacio entre secciones */
+    }
+}
+
+/* Media query para pantallas menores a 475px */
+/* Media query para pantallas menores a 475px */
+@media screen and (max-width: 474px) {
+    .content {
+        width: 100%;
+        /* Hacer que el contenido ocupe todo el ancho disponible */
+    }
+
+    .Article-container {
+        flex-direction: column;
+        /* Mostrar los artículos de manera vertical */
+        align-items: center;
+        /* Centrar los elementos verticalmente */
+        margin: 0.3rem;
+        /* Reducir el margen entre artículos */
+    }
+
+    .site,
+    .datos,
+    .details {
+        width: 100%;
+        /* Hacer que las secciones ocupen todo el ancho */
+        margin-bottom: 1rem;
+        /* Agregar espacio entre secciones */
+    }
+}

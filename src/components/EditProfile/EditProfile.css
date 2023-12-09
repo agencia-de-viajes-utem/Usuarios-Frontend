@@ -1,0 +1,68 @@
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+}
+
+.content   {
+    padding: 0%; 
+    width: 870px;
+    height:  700px;
+    flex-shrink: 0;
+    background: #F8F8F8;
+}
+
+.content-tittle{
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: #D9D9D9;   
+}
+
+.content-layout{
+    width: 870px;
+    height: 40px;
+    flex-shrink: 0;
+    background: #023047;
+    color: #f9f1f1;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+}
+
+.content-input{
+    width: 172px;
+    height: 32px;
+    top: 349px;
+    left: 706px;
+    border-radius: 12px;
+    border-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(196, 196 196, 0);
+}
+
+.content-label{
+    width: 71px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #565656;
+    font-size: 14px;    
+}
+
+.profile-editor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Ajusta la altura según tus preferencias */
+    margin: 0 auto;
+    }
+  
